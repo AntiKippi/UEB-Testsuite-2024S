@@ -1,0 +1,28 @@
+// Valid keywords
+end
+return
+if
+then
+else
+while
+do
+var
+goto
+not
+head
+tail
+islist
+and
+
+// Invalid keywords (parsed as identifiers)
+End
+eNd
+enD
+ENd
+EnD
+eND
+END
+andif
+_then
+then_
+null
