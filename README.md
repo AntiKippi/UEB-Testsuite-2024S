@@ -19,4 +19,4 @@ function test(){
 
 ## Notes
 - If you write your own tests, please share them by creating a pull request
-- If you choose to do so, please prefix your tests with some handle (e.g. your username) to avoid conflicts
+- If you choose to do so please use the following naming convention to avoid conflicts: `{username}_{description}.{type}` (e.g. `AntiKippi_comments.0`)
