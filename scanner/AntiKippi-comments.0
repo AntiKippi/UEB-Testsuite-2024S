@@ -1,0 +1,17 @@
+// I am a comment
+// I am a //nested comment
+///I am also a comment
+// I am a comment the keywords end, return, if, then, else, while, do, var, goto, not, head, tail, islist and and and
+// I am a comment containing the ; ( ) , : := + * . < = - operators
+// I am a comment containing some numbers: 123, 123fh 1_23, 1_23Fh
+id // I am a comment after an identifier
+123h // I am a comment after a hex number
+123 // I am a comment after a dec number
+end // I am a comment after a keyword
+//
+///
+////
+i//
+123///
+123fh////
+and//
