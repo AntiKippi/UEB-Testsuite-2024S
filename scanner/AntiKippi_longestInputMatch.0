@@ -1,0 +1,15 @@
+// Test longest input match criteria and some corner cases
+39_end    // longest input match => num 39 id _end
+;//395_end   // ?
+3995_end  // longest input match => num 3995 end 
+3_head    // longest input match => num 3 id _head
+;//390_head  // ?
+3900_head // longest input match => num 0x3900 id ead 
+39a_HD    // longest input match => num 0x39a id D
+;//3a_HD     // ?
+3a_HDD    // longest input match => num 3 id a_HDD
+3head     // longest input match => num 3 head
+39head    // longest input match => num 39 head
+;//390head   // ?
+3900head  // longest input match => num 0x3900 id ead 
+3aahead   // longest input match => num 3 id aahead
