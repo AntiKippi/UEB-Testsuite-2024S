@@ -1,7 +1,19 @@
 // Test longest input match criteria and some corner cases
+// Note that some of these tests currently fail with
+// my implementation and I am not quite sure what's wrong.
+// According to
+// https://web.stanford.edu/class/archive/cs/cs143/cs143.1128/handouts/050%20Flex%20In%20A%20Nutshell.pdf
+// flex by default "will gather [characters] until it forms 
+// the longest possible match for any of the available patterns".
+// But still, 39_end becomes "num 39 end" and not "num 39 id _end" with my implementation
+// even though _end is the longest possible sequence to form here
+// Anyways I have asked in the forum what to do in these cases and until there is a answer
+// I think it's best to just ignore these (failing) tests
+3_end     // longest input match => num 3 id _end
 39_end    // longest input match => num 39 id _end
 ;//395_end   // ?
-3995_end  // longest input match => num 3995 end 
+3995_end  // longest input match => num 3995 end
+39950_end // longest input match => num 39950 end
 3_head    // longest input match => num 3 id _head
 ;//390_head  // ?
 3900_head // longest input match => num 0x3900 id ead 
