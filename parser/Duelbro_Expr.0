@@ -1,0 +1,16 @@
+f()
+	t;
+	not t;
+	head t;
+	tail t;
+	islist t;
+	t + t;
+	t + t + t;
+	t and t;
+	t and t and t;
+	t.t;
+	t.t.t;
+	t < t;
+	t = t;
+	t - t;
+end;

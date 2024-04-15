@@ -1,0 +1,5 @@
+f()
+	t := not 0;
+	head not 0 := not 0;
+	tail not 0 := not 0;
+end;
