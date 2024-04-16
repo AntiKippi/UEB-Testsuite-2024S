@@ -1,0 +1,4 @@
+main()
+    head 7 = 3 := islist 8080;
+    tail fun(a, b) := tail fun(b, a);
+end;
