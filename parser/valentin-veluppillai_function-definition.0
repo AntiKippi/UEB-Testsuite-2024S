@@ -1,0 +1,13 @@
+main()
+end;
+
+foo(a)
+end
+;
+
+bar(a,) end;
+
+foobar(a,b,c,d,e,f,g,h,i,j)
+end;
+
+baz(a,b,c,d,e,) end ;

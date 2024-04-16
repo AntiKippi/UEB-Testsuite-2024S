@@ -1,0 +1,3 @@
+expr()
+    var foo := (islist bar) + (a - b) + baz + (7_7_H * (term.that.consists.of.chained.dots) * (not(not(not(not(not(not(sane))))))));
+end;

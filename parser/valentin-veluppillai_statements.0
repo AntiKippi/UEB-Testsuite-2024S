@@ -1,0 +1,19 @@
+main()
+    var result := 0;
+    while result < 10 do
+again:
+      result := result + 1;
+      if even(result) then
+        goto again;
+      end;
+    end;
+    if result = 10 then
+      goto last;
+    else
+      goto again;
+    end;
+    last: var x := result;
+    return x;
+    7 + 3;
+
+end;
