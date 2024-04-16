@@ -1,0 +1,59 @@
+f() end;
+f(p) end;
+f(p,) end;
+f(p,p) end;
+f()
+l:
+    return 0;
+    var v := 0;
+    head not 0 := 0;
+    tail not 0 := 0;
+    v := 0;
+    (not 0);
+    t;
+    1;
+    0Fh;
+    f();
+    f(not 0);
+    f(not 0,);
+    f(not 0, not 0);
+    not t;
+    head t;
+    tail t;
+    islist t;
+    t + 1;
+    t + 1 + f() + 0Fh;
+    t * 1;
+    t * 1 * f() * 0Fh;
+    t and 1;
+    t and 1 and f() and 0Fh;
+    t.1;
+    t.1.f().0Fh;
+    t < 1;
+    f() < 0Fh;
+    t = 1;
+    f() = 0Fh;
+    t - 1;
+    f() - 0Fh;
+    goto l;
+    if not (not 0) then
+	not 0;
+l:
+	not 0;
+    end;
+    if not (not 0) then
+	not 0;
+l:
+	not 0;
+    else
+	not 0;
+l:
+	not 0;
+    end;
+    while not (not 0) do
+	not 0;
+l:
+	not 0;
+    end;
+end;
+

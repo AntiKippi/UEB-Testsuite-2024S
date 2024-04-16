@@ -1,0 +1,7 @@
+f()
+	f();
+	f(not 0);
+	f(not 0,);
+	f(not 0, not 0);
+	f(not 0, not 0,);
+end;

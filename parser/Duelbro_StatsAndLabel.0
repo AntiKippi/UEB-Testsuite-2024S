@@ -1,0 +1,21 @@
+f() end;
+
+f()
+	not 0;
+end;
+
+f()
+l:
+end;
+
+f()
+	not 0;
+l:
+end;
+
+f()
+	not 0;
+l:
+l:
+	not 0;
+end;

@@ -1,0 +1,5 @@
+f() end;
+f(p) end;
+f(p,) end;
+f(p,p) end;
+f(p,p,) end;

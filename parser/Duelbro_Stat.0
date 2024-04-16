@@ -1,0 +1,18 @@
+f()
+	return not 0;
+	var i := not 0;
+	i := not 0;
+	not 0;
+	goto i;
+	if not 0 then
+		not 0;
+	end;
+	if not 0 then
+		not 0;
+	else
+		not 0;
+	end;
+	while not 0 do
+		not 0;
+	end;
+end;

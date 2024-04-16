@@ -1,0 +1,7 @@
+f()
+	not (not 0);
+	not t;
+	not 1;
+	not 0Fh;
+	not f();
+end;
