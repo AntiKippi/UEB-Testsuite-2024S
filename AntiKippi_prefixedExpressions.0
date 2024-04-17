@@ -1,0 +1,28 @@
+main()
+    id;
+    head (5+a);
+    head head id;
+    head not (head id);
+    head head head id;
+    head tail not (tail (term and term));
+    tail islist not head id;
+    tail head islist not head id;
+ 
+    id := expr;
+    head (5+a) := 0_8h;
+    head head id := not (head (5+5));
+    head not (head id) := ex < 6;
+    head head head id := 012345_6789;
+    head tail not (tail (term and term)) := head tail not islist (head (tail (not (islist (a-a)))));
+    tail islist not head id := id;
+    tail head islist not head id := exxpr;
+ 
+    id;
+    not (5+a);
+    not  not id;
+    not head (head id);
+    not not not id;
+    not islist head (islist (term and term));
+    islist tail head not id;
+    islist not tail head not id;
+end;
