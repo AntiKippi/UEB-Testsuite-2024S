@@ -1,0 +1,3 @@
+hello()
+	head head (id * 3); 
+end;
