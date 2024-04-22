@@ -1,0 +1,4 @@
+hello()
+	head head id := 3;
+	head tail head islist not id;
+end;
