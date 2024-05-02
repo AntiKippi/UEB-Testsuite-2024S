@@ -1,0 +1,5 @@
+test()
+    var a := 1;
+    somefuncname(a, undeclared()); // function names don't have to be declared
+    var test := 2; // function names can be used as variable names
+end;
