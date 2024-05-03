@@ -1,0 +1,11 @@
+test(a, b, c)
+    var f := 1;
+    if f < 2 then
+        var d := 2;
+        print(f);
+        if d < 3 then
+            a;
+        end;
+    end;
+    return c;
+end;
