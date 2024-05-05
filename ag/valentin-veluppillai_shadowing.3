@@ -1,0 +1,8 @@
+shadowing()
+    var a := 1;
+    if 0 < a then
+       var a := 2;
+       return a;
+    end;
+    return a;
+end;
