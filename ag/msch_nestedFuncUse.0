@@ -1,0 +1,9 @@
+test(a, b, c)
+    var f := 1;
+    if f < 2 then
+        if f < 2 then
+        	f := func(b);
+    	end;
+    end;
+    return f;
+end;

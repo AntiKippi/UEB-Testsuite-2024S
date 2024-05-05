@@ -1,0 +1,14 @@
+test(a, b, c)
+    var f := 1;
+    if f < 2 then
+    	f := 3;
+        if (f + f) < 2 then
+        	f := 3;
+        	b := 4;
+        else
+        	f := 3;
+    	end;
+    	b := 4;
+    end;
+    return c;
+end;

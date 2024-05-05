@@ -1,0 +1,7 @@
+test(a, b, c)
+    var f := 1;
+    if f < 2 then
+        f := 3;
+    end;
+    return c;
+end;
