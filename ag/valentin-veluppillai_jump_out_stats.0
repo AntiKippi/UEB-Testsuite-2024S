@@ -1,0 +1,9 @@
+jump_out()
+    var a := 1;
+    while 1 < 1 do
+        a := a + 1;
+        goto after_loop;
+    end;
+    after_loop:
+    return a;
+end;

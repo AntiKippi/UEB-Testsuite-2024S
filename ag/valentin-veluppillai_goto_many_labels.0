@@ -1,0 +1,39 @@
+jump_into()
+    start:
+    var a := 1;
+    goto start;
+    while 1 < 1 do
+        in_loop:
+        a := a + 1;
+        b:
+        goto in_loop;
+        goto start;
+        goto after_loop;
+    end;
+    if 1 < 1 then
+        in_loop:
+        a := a + 1;
+        b:
+        goto in_loop;
+        goto start;
+        goto after_loop;
+    end;
+    if 1 < 1 then
+        in_loop:
+        a := a + 1;
+        b:
+        goto in_loop;
+        goto start;
+        goto after_loop;
+    else
+        in_loop:
+        a := a + 1;
+        b:
+        goto in_loop;
+        goto start;
+        goto after_loop;
+    end;
+    goto after_loop;
+    after_loop:
+    return a;
+end;
