@@ -1,0 +1,6 @@
+test()
+    a:
+    if 1 < 3 then
+        goto a;
+    end;
+end;

@@ -1,0 +1,4 @@
+test()
+    goto a;
+    a:
+end;
