@@ -1,0 +1,11 @@
+extern long eq(long, long);
+extern long lt(long, long);
+
+long a = eq(13, 14);
+long b = eq(13, 13);
+long c = lt(14, 20);
+long d = lt(24, 20);
+
+printf("%lli %lli %lli %lli\n", a, b, c, d);
+
+RET(a == 0 && b == (-1 << 1) && c == (-1 << 1) && d == 0);
