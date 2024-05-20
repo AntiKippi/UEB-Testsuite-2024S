@@ -1,0 +1,13 @@
+extern int64_t f(int64_t);
+extern int64_t g(int64_t, int64_t);
+extern int64_t h(int64_t);
+
+int64_t listcell[] = {17 << 1, 25 << 1};
+int64_t* ptr = listcell;
+int64_t tptr = (int64_t)(ptr) + 1;
+
+int64_t head = f(tptr);
+int64_t tail = g(0, tptr);
+int64_t sum = h(tptr);
+
+RET(head == listcell[0] && tail == listcell[1]);
