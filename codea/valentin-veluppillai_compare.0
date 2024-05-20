@@ -1,3 +1,6 @@
 eq(a, b) return a = b; end;
 lt(a, b) return a < b; end;
 il(a) return islist a; end;
+clt() return (07000000000000000h) < (05ffffffffffffffh); end;
+clt2() return (05ffffffffffffffh) < (07000000000000000h); end;
+ceq() return 03ffffffffffffffh = 07ffffffffffffffh; end;
