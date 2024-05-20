@@ -1,2 +1,3 @@
 eq(a, b) return a = b; end;
 lt(a, b) return a < b; end;
+il(a) return islist a; end;
