@@ -1,0 +1,15 @@
+notconst() return not 7; end;
+notnot(a) return not not a; end;
+addconst1(a) return a + 1; end;
+addconst2() return 1 + 2; end;
+addconst3(a) return 1 + a + 3; end;
+mulconst1(a) return a * 3; end;
+mulconst2() return 1 * 2; end;
+mulconst3(a) return 1 * a * 3; end;
+subconst1(a) return a - 1; end;
+subconst2() return 1 - 2; end;
+ltconst1(a) return a < 100; end;
+ltconst2() return 10 < 100; end;
+andconst1(a) return a and 1; end;
+andconst2() return 1 and 2; end;
+andconst3(a) return 6 and a and 3; end;
