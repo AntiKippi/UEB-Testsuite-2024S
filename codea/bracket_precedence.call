@@ -1,0 +1,2 @@
+extern long f();
+RET(f() == 22 << 1);

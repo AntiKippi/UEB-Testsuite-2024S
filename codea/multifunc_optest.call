@@ -1,0 +1,90 @@
+extern long addf(long);
+extern long subf(long);
+extern long mulf(long);
+extern long ltf(long);
+extern long andf(long);
+extern long notf(long);
+extern long headf(long);
+extern long tailf(long);
+extern long eqf(long);
+extern long islistf(long);
+
+long tag_num(long val) {
+    return val << 1;
+}
+long untag_num(long val) {
+    return val >> 1;
+}
+long tag_list(long val) {
+    return val + 1;
+}
+long mock_add(long val) {
+    return tag_num(1 + untag_num(val));
+}
+long mock_sub(long val) {
+    return tag_num(1 - untag_num(val));
+}
+long mock_mul(long val) {
+    return tag_num(1 * untag_num(val));
+}
+long mock_lt(long val) {
+    return tag_num(1 < untag_num(val) ? -1 : 0);
+}
+long mock_and(long val) {
+    return tag_num(1 & untag_num(val));
+}
+long mock_not(long val) {
+    return tag_num(untag_num(~val));
+}
+long mock_head(long val) {
+    return val;
+}
+long mock_tail(long val) {
+    return val;
+}
+long mock_eq(long val) {
+    return tag_num(tag_num(1) == val ? -1 : 0);
+}
+long mock_islist(long val) {
+    return tag_num(1 & val ? -1 : 0);
+}
+
+const long max = 1000000L;
+const int even = 6, odd = 0, both = 2;
+long pass = 0;
+for (long i = -max; i < max; i++) {
+    if (i % 2 == 0) {
+        pass += (addf(i) == mock_add(i));
+        pass += (subf(i) == mock_sub(i));
+        pass += (mulf(i) == mock_mul(i));
+        if (ltf(i) == mock_lt(i)) {
+            pass++;
+        } else {
+            fprintf(stderr, "i ist %ld, ltf sagt %ld, mock sagt %ld\n", i, ltf(i), mock_lt(i));
+        }
+        pass += (andf(i) == mock_and(i));
+        pass += (notf(i) == mock_not(i));
+    }
+    // pass += (headf(i) == mock_head(i));
+    // pass += (tailf(i) == mock_tail(i));
+    pass += (eqf(i) == mock_eq(i));
+    pass += (islistf(i) == mock_islist(i));
+}
+RET(pass == 2 * ((even + odd) * max / 2 + both * max));
+// short pass = 1;
+// for (long i = -max; i < max; i++) {
+//     if (i % 2 == 0) {
+//         pass &= (addf(i) == mock_add(i));
+//         pass &= (subf(i) == mock_sub(i));
+//         pass &= (mulf(i) == mock_mul(i));
+//         pass &= (ltf(i) == mock_lt(i));
+//         pass &= (andf(i) == mock_and(i));
+//         pass &= (notf(i) == mock_not(i));
+//     }
+//     // pass &= (headf(i) == mock_head(i));
+//     // pass &= (tailf(i) == mock_tail(i));
+//     pass &= (eqf(i) == mock_eq(i));
+//     pass &= (islistf(i) == mock_islist(i));
+//     // fprintf(stderr, "%ld\n", i);
+// }
+// RET(pass);
