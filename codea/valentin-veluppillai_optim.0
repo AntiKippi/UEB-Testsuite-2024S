@@ -8,6 +8,7 @@ mulconst2() return 1 * 2; end;
 mulconst3(a) return 1 * a * 3; end;
 subconst1(a) return a - 1; end;
 subconst2() return 1 - 2; end;
+subconst3(a) return 1 - (a - 3); end;
 ltconst1(a) return a < 100; end;
 ltconst2() return 10 < 100; end;
 andconst1(a) return a and 1; end;
