@@ -1,0 +1,50 @@
+extern int64_t notconst();
+extern int64_t notnot(int64_t);
+extern int64_t addconst1(int64_t);
+extern int64_t addconst2();
+extern int64_t addconst3(int64_t);
+extern int64_t mulconst1(int64_t);
+extern int64_t mulconst2();
+extern int64_t mulconst3(int64_t);
+extern int64_t subconst1(int64_t);
+extern int64_t subconst2();
+extern int64_t ltconst1(int64_t);
+extern int64_t ltconst2();
+extern int64_t andconst1(int64_t);
+extern int64_t andconst2();
+extern int64_t andconst3(int64_t);
+
+printf("%lli, %lli\n", notconst() >> 1, ~((int64_t) 7));
+printf("%lli, %lli\n", notnot(7 << 1) >> 1, 7);
+printf("%lli, %lli\n", addconst1(7 << 1) >> 1, 8);
+printf("%lli, %lli\n", addconst2() >> 1, 3);
+printf("%lli, %lli\n", addconst3(7 << 1) >> 1, 11);
+printf("%lli, %lli\n", mulconst1(7 << 1) >> 1, 21);
+printf("%lli, %lli\n", mulconst2() >> 1, 2);
+printf("%lli, %lli\n", mulconst3(7 << 1) >> 1, 21);
+printf("%lli, %lli\n", subconst1(7 << 1) >> 1, 6);
+printf("%lli, %lli\n", subconst2() >> 1, (int64_t) -1);
+printf("%lli, %lli\n", ltconst1(7 << 1) >> 1, (int64_t) -1);
+printf("%lli, %lli\n", ltconst2() >> 1, (int64_t) -1);
+printf("%lli, %lli\n", andconst1(7 << 1) >> 1, 1);
+printf("%lli, %lli\n", andconst2() >> 1, 0);
+printf("%lli, %lli\n", andconst3(2 << 1) >> 1, 6 & 2 & 3);
+
+
+int ret = (notconst(7 << 1) >> 1) == ~((int64_t) 7);
+ret = ret && notnot(7 << 1) >> 1 == 7;
+ret = ret && addconst1(7 << 1) >> 1 == 8;
+ret = ret && addconst2() >> 1 == 3;
+ret = ret && addconst3(7 << 1) >> 1 == 11;
+ret = ret && mulconst1(7 << 1) >> 1 == 21;
+ret = ret && mulconst2() >> 1 == 2;
+ret = ret && mulconst3(7 << 1) >> 1 == 21;
+ret = ret && subconst1(7 << 1) >> 1 == 6;
+ret = ret && subconst2() >> 1 == (int64_t) -1;
+ret = ret && ltconst1(7 << 1) >> 1 == (int64_t) -1;
+ret = ret && ltconst2() >> 1 == (int64_t) -1;
+ret = ret && andconst1(7 << 1) >> 1 == 1;
+ret = ret && andconst2() >> 1 == 0;
+ret = ret && andconst3(6 << 1) >> 1 == 2;
+
+RET(ret);

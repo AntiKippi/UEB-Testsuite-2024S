@@ -1,0 +1,12 @@
+extern long list(long);
+int64_t tptr = (list((6 << 1)));
+int64_t* ptr;
+int correct = 1, i;
+for(i = 0; i < 5; i++){
+    ptr = (int64_t*) (tptr - 1);
+    tptr = (*(ptr+1));
+    correct = correct && (*ptr == ((i+1)<<1));
+}
+correct = correct && (*(ptr+1) == ((i+1)<<1));
+
+RET(correct);
