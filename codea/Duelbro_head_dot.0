@@ -1,0 +1,3 @@
+f()
+    return head (1.2);
+end;

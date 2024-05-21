@@ -1,0 +1,30 @@
+addf(a)
+    return 1 + a;
+end;
+subf(c)
+    return 1 - c;
+end;
+mulf(d)
+    return 1 * d;
+end;
+ltf(e)
+    return 1 < e;
+end;
+andf(f)
+    return 1 and f;
+end;
+notf(g)
+    return not g;
+end;
+headf(h)
+    return head (h.h);
+end;
+tailf(i)
+    return tail (i.i);
+end;
+eqf(j)
+    return 1 = j;
+end;
+islistf(k)
+    return islist k;
+end;
