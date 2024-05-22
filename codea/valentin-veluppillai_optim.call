@@ -14,6 +14,7 @@ extern int64_t ltconst2();
 extern int64_t andconst1(int64_t);
 extern int64_t andconst2();
 extern int64_t andconst3(int64_t);
+extern int64_t islistjoin(int64_t);
 
 printf("%lli, %lli\n", notconst() >> 1, ~((int64_t) 7));
 printf("%lli, %lli\n", notnot(7 << 1) >> 1, 7);
@@ -31,6 +32,7 @@ printf("%lli, %lli\n", ltconst2() >> 1, (int64_t) -1);
 printf("%lli, %lli\n", andconst1(7 << 1) >> 1, 1);
 printf("%lli, %lli\n", andconst2() >> 1, 0);
 printf("%lli, %lli\n", andconst3(2 << 1) >> 1, 6 & 2 & 3);
+printf("%lli, %lli\n", islistjoin(2 << 1) >> 1, (int64_t) -1);
 
 
 int ret = (notconst(7 << 1) >> 1) == ~((int64_t) 7);
@@ -49,5 +51,6 @@ ret = ret && ltconst2() >> 1 == (int64_t) -1;
 ret = ret && andconst1(7 << 1) >> 1 == 1;
 ret = ret && andconst2() >> 1 == 0;
 ret = ret && andconst3(6 << 1) >> 1 == 2;
+ret = ret && islistjoin(2 << 1) >> 1 == -1;
 
 RET(ret);

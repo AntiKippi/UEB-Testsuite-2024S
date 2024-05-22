@@ -14,3 +14,4 @@ ltconst2() return 10 < 100; end;
 andconst1(a) return a and 1; end;
 andconst2() return 1 and 2; end;
 andconst3(a) return 6 and a and 3; end;
+islistjoin(a) return islist ((a + 3).8); end;
