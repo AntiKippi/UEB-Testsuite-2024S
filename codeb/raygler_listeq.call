@@ -1,0 +1,3 @@
+extern long equal();
+extern long notequal();
+RET((equal() >> 1) == -1 && (notequal() >> 1) == 0);

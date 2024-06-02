@@ -1,0 +1,11 @@
+equal()
+    var x := 1.400;
+    var y := x;
+    return x = y;
+end;
+
+notequal()
+    var x := 1.400;
+    var y := 1.400;
+    return x = y;
+end;

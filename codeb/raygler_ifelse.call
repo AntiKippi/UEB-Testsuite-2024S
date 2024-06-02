@@ -1,0 +1,2 @@
+extern long grade(long);
+RET((grade(20L << 1) >> 1) == 5L && (grade(80L << 1) >> 1) == 3L && (grade(111L << 1) >> 1) == 1L);

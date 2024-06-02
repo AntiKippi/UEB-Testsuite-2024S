@@ -1,0 +1,2 @@
+extern long length();
+RET((length() >> 1) == 6L);

@@ -1,0 +1,21 @@
+gen_list(left, right)
+    return left.right;
+end;
+
+index_of(list, obj)
+    var index := 0;
+
+    while (islist list) do
+        if (head list) = obj then
+            return index;
+        end;
+        index := index + 1;
+        list := tail list;
+    end;
+
+    if list = obj then
+        return index;
+    end;
+
+    return 0 - 1;
+end;

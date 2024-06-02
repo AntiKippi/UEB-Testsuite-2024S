@@ -1,0 +1,6 @@
+f()
+    var list := 1.2.3.4;
+    tail list := 100;
+    head list := 25;
+    return (head list) + (tail list);
+end;
