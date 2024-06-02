@@ -1,0 +1,5 @@
+f(x)
+    x := 4;
+    x := x + 4;
+    return x;
+end;

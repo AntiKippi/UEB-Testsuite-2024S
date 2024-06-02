@@ -1,0 +1,16 @@
+f()
+    var x := 0;
+
+    if 3 < 1 then
+        x := 0 - 1;
+    end;
+
+    if 3 = 3 then
+        x := 1;
+        if islist 3 then
+            x := 2;
+        end;
+    end;
+
+    return x;
+end;

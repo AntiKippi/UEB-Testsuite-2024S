@@ -1,0 +1,12 @@
+f()
+    var x := 1;
+    goto changer;
+    x := 10000;
+
+    retlabel:
+    return x;
+
+    changer:
+    x := 2;
+    goto retlabel;
+end;

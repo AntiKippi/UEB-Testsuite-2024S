@@ -1,0 +1,7 @@
+f(c)
+    if c < 3 then
+        var x := 4;
+    end;
+    var x := 5;
+    return x;
+end;

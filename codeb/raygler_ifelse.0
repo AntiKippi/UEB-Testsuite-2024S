@@ -1,0 +1,19 @@
+grade(val)
+    if val < 60 then
+        return 5;
+    else 
+        if val < 75 then
+            return 4;
+        else 
+            if val < 90 then
+                return 3;
+            else 
+                if val < 105 then
+                    return 2;
+                else
+                    return 1;
+                end;
+            end;
+        end;
+    end;
+end;

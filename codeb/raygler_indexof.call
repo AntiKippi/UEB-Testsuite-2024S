@@ -1,0 +1,32 @@
+
+extern long gen_list(long left, long right);
+extern long index_of(long list, long obj);
+
+long c_arr_to_list(long *arr, int length)
+{
+    if (length % 2 != 0 || length < 2) {
+        return 0L;    
+    }
+
+    long curr = gen_list(arr[length - 2], arr[length - 1]);
+    for (int i = 2; i < length; i++) {
+        curr = gen_list(arr[length - i - 1], curr);
+    }
+
+    return curr;
+}
+
+long arr[] = {
+    0L << 1,
+    1L << 1,
+    2L << 1,
+    3L << 1,
+    4L << 1,
+    5L << 1,
+    6L << 1,
+    7L << 1,
+};
+
+long list = c_arr_to_list(arr, 8);
+
+RET((index_of(list, 2L << 1) >> 1) == 2L && (index_of(list, 7L << 1) >> 1) == 7L && (index_of(list, 200L << 1) >> 1) == -1L);

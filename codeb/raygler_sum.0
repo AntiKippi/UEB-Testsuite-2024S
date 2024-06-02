@@ -1,0 +1,11 @@
+f(n)
+    var i := 1;
+    var sum := 0;
+
+    while i < (n + 1) do
+        sum := sum + i;
+	    i := i + 1;
+    end;
+
+    return sum;
+end;
