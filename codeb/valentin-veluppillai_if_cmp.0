@@ -1,0 +1,7 @@
+if_cmp()
+    var x := 1;
+    if x < 20 then
+      return 1;
+    end;
+    return 0;
+end;

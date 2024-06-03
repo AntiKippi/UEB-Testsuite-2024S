@@ -1,0 +1,3 @@
+extern if_cmp();
+
+RET(if_cmp() == 2);

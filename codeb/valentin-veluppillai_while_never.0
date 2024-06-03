@@ -1,0 +1,6 @@
+while_never()
+  while 1 do
+    return 1;
+  end;
+  return 2;
+end;

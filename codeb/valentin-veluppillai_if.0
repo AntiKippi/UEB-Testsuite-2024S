@@ -1,0 +1,15 @@
+if_(i)
+  if i then
+    return 1;
+  end;
+  return 2;
+end;
+
+if_else(i)
+  if i then
+    return 1;
+  else
+    return 2;
+  end;
+  return 3;
+end;
