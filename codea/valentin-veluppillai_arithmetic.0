@@ -4,6 +4,8 @@ sub(a, b) return a - b; end;
 _and(a, b) return a and b; end;
 _not(a) return not a; end;
 
+mulsum(a, b) return (a * a) + (b * a) + (a * b * a) + 2; end;
+
 arith(a, b, c)
     return ((10h + 2 + a) - (b * c * 1)) and (not 1);
 end;

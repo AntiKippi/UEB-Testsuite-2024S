@@ -1,0 +1,5 @@
+extern long while_never();
+
+printf("ret is %i\n", while_never() >> 1);
+
+RET(while_never() >> 1 == 2);

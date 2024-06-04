@@ -1,0 +1,5 @@
+multi()
+  var x := 17;
+  x := (x + x) * x;
+  return x;
+end;

@@ -1,0 +1,10 @@
+gt()
+label2:
+ goto label1;
+ return 4;
+label3:
+ return 99;
+ goto label2;
+label1:
+ goto label3;
+end;
