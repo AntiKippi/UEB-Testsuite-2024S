@@ -1,0 +1,13 @@
+foo(x, y, z)
+  return x + y + z;
+end;
+
+bar()
+  return 11;
+end;
+
+foobar(y)
+    var x := bar();
+    var r := foo(x, y, 10);
+    return r;
+end;

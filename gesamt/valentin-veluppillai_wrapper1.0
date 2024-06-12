@@ -1,0 +1,7 @@
+f(x)
+    return x*x;
+end;
+
+wrapper()
+    return f(5);
+end;

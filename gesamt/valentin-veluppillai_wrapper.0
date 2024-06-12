@@ -1,0 +1,7 @@
+f()
+    return 5*5;
+end;
+
+wrapper()
+    return f();
+end;

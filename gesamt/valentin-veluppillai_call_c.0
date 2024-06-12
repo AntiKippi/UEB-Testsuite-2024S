@@ -1,0 +1,3 @@
+call_c(c)
+  return putchar(c);
+end;

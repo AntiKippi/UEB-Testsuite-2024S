@@ -1,0 +1,3 @@
+extern long foobar(long);
+
+RET(foobar(2 << 1) == 23l << 1);
