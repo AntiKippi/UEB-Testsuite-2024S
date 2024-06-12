@@ -1,0 +1,5 @@
+extern long foobar(), barfoo(), barbarfoo(), foobarbaz();
+
+printf("%li %li %li %li\n", foobar() >> 1, barfoo() >> 1, barbarfoo() >> 1, foobarbaz() >> 1);
+
+RET(foobar() >> 1 == 12 && barfoo() >> 1 == 12*7, barbarfoo() >> 1 == 12*7*7 && foobarbaz() >> 1 == -4);
