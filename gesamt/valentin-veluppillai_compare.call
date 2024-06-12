@@ -1,0 +1,23 @@
+extern long eq(long, long);
+extern long lt(long, long);
+extern long il(long);
+extern long cil();
+extern long clt();
+extern long clt2();
+extern long ceq();
+
+long cell[2];
+long a = eq(13, 14);
+long b = eq(13, 13);
+long c = lt(14, 20);
+long d = lt(24, 20);
+long e = il((long)(cell)+1);
+long f = il(22);
+long g = clt();
+long h = clt2();
+long i = ceq();
+long j = cil();
+
+// printf("beep %lli %lli %lli %lli %lli %lli %lli %lli %lli %lli\n", a, b, c, d, e, f, g, h, i, j);
+
+RET(a == 0 && b == (-1 << 1) && c == (-1 << 1) && d == 0 && e == (-1 << 1) && f == 0 && g == 0 && h == (-1 << 1) && i == (-1 << 1) && i == (-1 << 1));

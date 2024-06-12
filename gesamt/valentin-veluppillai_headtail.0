@@ -1,0 +1,11 @@
+f(a)
+    return head a;
+end;
+
+g(a, b)
+    return tail b;
+end;
+
+h(x)
+    return (head x) + (tail x);
+end;
