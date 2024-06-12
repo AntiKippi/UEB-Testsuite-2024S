@@ -1,0 +1,3 @@
+extern long retvar();
+
+RET(retvar() == 0);

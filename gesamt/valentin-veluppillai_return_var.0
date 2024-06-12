@@ -1,0 +1,4 @@
+retvar()
+ var x := 0;
+ return x;
+end;

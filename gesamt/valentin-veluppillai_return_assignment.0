@@ -1,0 +1,5 @@
+retassign(a)
+ var x := 0;
+ x := a;
+ return x;
+end;
