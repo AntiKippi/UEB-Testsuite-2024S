@@ -1,0 +1,3 @@
+extern long fib(long);
+
+RET(fib(1 << 1) >> 1 == 1 && fib(6 << 1) >> 1 == 8 && fib(14 << 1) >> 1 == 377);
