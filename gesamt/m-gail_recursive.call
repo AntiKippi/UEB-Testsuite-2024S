@@ -1,0 +1,2 @@
+extern long fib(long);
+RET((fib(8L << 1) >> 1) == 21L);

@@ -1,0 +1,8 @@
+f(a)
+    var twelve := times_3(4);
+    return a + twelve + times_3(2);
+end;
+
+times_3(a)
+    return a * 3;
+end;
