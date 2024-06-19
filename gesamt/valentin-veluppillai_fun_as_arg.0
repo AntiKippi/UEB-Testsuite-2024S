@@ -1,0 +1,28 @@
+foo()
+  return 12;
+end;
+
+bar(x)
+  return x * 7;
+end;
+
+baz(x, y)
+  return x - y;
+end;
+
+foobar()
+  return foo(bar(3));
+end;
+
+barfoo()
+  return bar(foo());
+end;
+
+barbarfoo()
+    return bar(bar(foo()));
+end;
+
+
+foobarbaz()
+    return baz(3, bar(baz(foo(), 11)));
+end;

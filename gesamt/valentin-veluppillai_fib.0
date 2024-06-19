@@ -1,0 +1,15 @@
+sum(n, m)
+ return n + m;
+end;
+
+fib(n)
+  if (n < 2) then
+    if(n = 1) then
+      return 1;
+    else
+      return 0;
+    end;
+  else
+     return sum(fib(n-1), fib(n-2));
+  end;
+end;

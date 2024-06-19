@@ -1,0 +1,4 @@
+extern long la();
+int64_t tptr = la();
+int64_t* ptr = (int64_t*) (tptr - 1);
+RET(*ptr == (1 << 1) && *(ptr+1) == (2 << 1));

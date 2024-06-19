@@ -1,0 +1,3 @@
+extern long wrapper();
+
+RET(wrapper() == 25 << 1);

@@ -1,0 +1,7 @@
+fac(n)
+  if (n < 2) then
+     return 1;
+  else
+    return n * fac(n-1);
+  end;
+end;

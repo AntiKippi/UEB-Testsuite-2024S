@@ -1,0 +1,14 @@
+extern long while_();
+
+int correct = 0;
+int x = 20;
+
+while (!(x < 1)) {
+      x--;
+      correct++;
+}
+
+int result = while_() >> 1;
+printf("WHOOOOP %i %i\n", correct, result);
+
+RET(result == correct);

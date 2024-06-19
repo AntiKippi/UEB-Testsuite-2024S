@@ -1,0 +1,3 @@
+extern long call_c(long);
+
+RET(call_c('~') == '~');

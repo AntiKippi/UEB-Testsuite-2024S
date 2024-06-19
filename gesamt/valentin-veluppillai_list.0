@@ -1,0 +1,5 @@
+list(a) return 1.2.3.4.5.a; end;
+
+append(a, b) return a.b; end;
+
+fourth_elem(a) return head tail tail tail a; end;

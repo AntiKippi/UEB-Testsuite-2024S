@@ -1,0 +1,6 @@
+la()
+ var x := 0.0;
+ head x := 1;
+ tail x := 2;
+ return x;
+end;
